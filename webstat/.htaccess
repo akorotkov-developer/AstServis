@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "/www/ph678361-281120171742114.www14.pagehost.ru/webstat"
+AuthUserFile /var/www/ph678361/data/etc/114425918.passwd
+DirectoryIndex index.html
+<Limit GET POST>
+	require valid-user
+</Limit>
