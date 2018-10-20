@@ -44,11 +44,13 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
                     var string10 = '<?=$string10?>';
                     var string11 = '<?=$string[11]?>';
                     var string12 = '<?=$string[12]?>';
+                    var string14 = '<?=$string[13]?>';
+                    var string15 = '<?=$string[14]?>';
 
                     $.ajax({
                         type: "POST",
                         url: "addrefresh.php",
-                        data: {string0:string0, string1:string1, string2:string2, string3:string3, string4:string4, string5:string5, string6:string6, string7:string7, string8:string8, string9:string9, string10:string10, string11:string11, string12:string12 }
+                        data: {string0:string0, string1:string1, string2:string2, string3:string3, string4:string4, string5:string5, string6:string6, string7:string7, string8:string8, string9:string9, string10:string10, string11:string11, string12:string12, string14:string14, string15:string15 }
                     }).done(function( result )
                     {
                         $("#msg").html( result );

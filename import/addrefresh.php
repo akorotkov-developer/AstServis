@@ -4,6 +4,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.ph
 ?>
 
 <?
+sleep(1);
 CModule::IncludeModule("iblock");
 $string = array();
 $string[0] = $_POST['string0'];
@@ -19,6 +20,8 @@ $string[9] = $_POST['string9'];
 $string[10] = $_POST['string10'];
 $string[11] = $_POST['string11'];
 $string[12] = $_POST['string12'];
+$string[14] = $_POST['string14'];
+$string[15] = $_POST['string15'];
 
 
 /*ФУНКЦИИ ДЛЯ ПОИСКА И СОЗДАНИЯ КАТАЛОГА*/
@@ -132,6 +135,8 @@ if ($string[0] != "") {
             $PROP['KOMPLEKTNOST'] = $komplekt;
             $PROP['GARANTY'] = '12 месяцев';
             $PROP['SHORT_NAME'] = $string[1];
+            $PROP['CREATOR'] = $string[14];
+            $PROP['KEY_WORDS_STRING'] = $string[15];
 
             $picture = array();
             if ($string[5]) {
@@ -153,10 +158,10 @@ if ($string[0] != "") {
 
             /*Обновляем цену товара*/
             $price = $string[4]; // take first value
-            $price = str_replace(',', '.', $price); // replace coma
+            $price = str_replace(',', '', $price); // replace coma
             $price = str_replace('р.', '', $price); // replace coma
             $price = str_replace(' ', '', $price); // replace coma
-            //AddMessage2Log($price);
+            AddMessage2Log($price);
 
             $arField = Array(
                 "PRODUCT_ID" => $PRODUCT_ID,
@@ -260,6 +265,8 @@ if ($string[0] != "") {
         $PROP['SROK'] = 'От 5 дней';
         $PROP['KOMPLEKTNOST'] = $komplekt;
         $PROP['GARANTY'] = '12 месяцев';
+        $PROP['CREATOR'] = $string[14];
+        $PROP['KEY_WORDS_STRING'] = $string[15];
 
         $arLoadProductArray = Array(
             "MODIFIED_BY" => $USER->GetID(), // элемент изменен текущим пользователем
@@ -277,10 +284,10 @@ if ($string[0] != "") {
 
         /*Добавляем цену товара*/
         $price = $string[4]; // take first value
-        $price = str_replace(',', '.', $price); // replace coma
+        $price = str_replace(',', '', $price); // replace coma
         $price = str_replace('р.', '', $price); // replace coma
         $price = str_replace(' ', '', $price); // replace coma
-        //AddMessage2Log($price);
+        AddMessage2Log($price);
 
         $arField = Array(
             "PRODUCT_ID" => $PRODUCT_ID,
