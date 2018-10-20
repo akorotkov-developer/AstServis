@@ -146,11 +146,12 @@ CModule::IncludeModule('iblock');
                             )
                         );?>
                     <?} else {?>
+
                         <?$APPLICATION->IncludeComponent(
                             "bitrix:menu",
                             "left",
                             array(
-                                "ROOT_MENU_TYPE" => "left",
+                                "ROOT_MENU_TYPE" => "left-n",
                                 "MENU_CACHE_TYPE" => "A",
                                 "MENU_CACHE_TIME" => "36000000",
                                 "MENU_CACHE_USE_GROUPS" => "Y",
