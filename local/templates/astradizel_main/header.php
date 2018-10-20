@@ -118,8 +118,11 @@ CModule::IncludeModule('iblock');
                     <!-- Конец поиска -->
 
                     <!-- Левое меню-->
-
-                    <?if (strpos($APPLICATION->GetCurPage(), 'catalog/') > 0) {?>
+                    <?
+                    $curDir = $APPLICATION->GetCurDir();
+                    $menu = new CMenu('left-n');
+                    if(!$menu->Init($curDir)) {
+                    ?>
                         <?$APPLICATION->IncludeComponent(
                             "bitrix:menu",
                             "left_catalog",

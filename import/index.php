@@ -4,11 +4,12 @@ $APPLICATION->SetTitle("Импорт товаров");
 $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 ?>
 <?
-$import = new Import();
-$import->getCSV();
+echo "<pre>";
+var_dump(SITE_TEMPLATE_PATH);
+echo "</pre>";
 ?>
 <?if ($_POST['check-import'] == 'y') {?>
-
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <?
     set_time_limit(0);
 
