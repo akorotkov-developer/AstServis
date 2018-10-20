@@ -32,15 +32,23 @@ CModule::IncludeModule('iblock');
     <div class="site-branding-area">
         <div class="container">
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <div class="logo">
-                        <h1><a href="index.html">АСТ<span>-СЕРВИС</span></a></h1>
+                        <h1><a href="/">АСТ<span>-СЕРВИС</span></a></h1>
+                    </div>
+                    <div class="phone">
+                        <h1><a href="tel: +74852789278"><span>(4852)90-66-00</span></a></h1>
                     </div>
                 </div>
-                <div class="col-sm-5">
-                    <div class="phone">
-                        <h1><a href="tel: +74852789278"><span>(4852)78-92-78</span></a></h1>
-                    </div>
+                <div class="col-sm-4">
+                    <!-- Поиск -->
+                    <?$APPLICATION->IncludeComponent("bitrix:search.form", "search-form-header", Array(
+                        "PAGE" => "#SITE_DIR#search/index.php",	// Страница выдачи результатов поиска (доступен макрос #SITE_DIR#)
+                        "USE_SUGGEST" => "N",	// Показывать подсказку с поисковыми фразами
+                    ),
+                        false
+                    );?>
+                    <!-- Конец поиска -->
                 </div>
 
                 <div class="col-sm-4">
@@ -66,24 +74,21 @@ CModule::IncludeModule('iblock');
 
     <!-- begin mainmenu area -->
     <?$APPLICATION->IncludeComponent(
-	"bitrix:menu", 
-	"horizontal_multilevel", 
-	array(
-		"ALLOW_MULTI_SELECT" => "N",
-		"CHILD_MENU_TYPE" => "left",
-		"DELAY" => "N",
-		"MAX_LEVEL" => "1",
-		"MENU_CACHE_GET_VARS" => array(
-		),
-		"MENU_CACHE_TIME" => "3600",
-		"MENU_CACHE_TYPE" => "A",
-		"MENU_CACHE_USE_GROUPS" => "Y",
-		"ROOT_MENU_TYPE" => "top",
-		"USE_EXT" => "N",
-		"COMPONENT_TEMPLATE" => "horizontal_multilevel"
-	),
-	false
-);?>
+        "bitrix:menu",
+        "horizontal_multilevel",
+        Array(
+            "ALLOW_MULTI_SELECT" => "N",
+            "CHILD_MENU_TYPE" => "left",
+            "DELAY" => "N",
+            "MAX_LEVEL" => "1",
+            "MENU_CACHE_GET_VARS" => array(""),
+            "MENU_CACHE_TIME" => "3600",
+            "MENU_CACHE_TYPE" => "N",
+            "MENU_CACHE_USE_GROUPS" => "Y",
+            "ROOT_MENU_TYPE" => "top",
+            "USE_EXT" => "N"
+        )
+    );?>
     <!-- End mainmenu area -->
     <?if ($APPLICATION->GetCurPage() != "/") {?>
     <div class="product-big-title-area">

@@ -88,7 +88,6 @@ function creatCatalogIfnotFind($IBLOCK_SECTION_ARRY)
 
     return $isSectionID;
 }
-
 /*КОНЕЦ ФУНКЦИЙ ДЛЯ ПОИСКА И СОЗДАНИЯ КАТАЛОГА*/
 
 
@@ -161,7 +160,6 @@ if ($string[0] != "") {
             $price = str_replace(',', '', $price); // replace coma
             $price = str_replace('р.', '', $price); // replace coma
             $price = str_replace(' ', '', $price); // replace coma
-            AddMessage2Log($price);
 
             $arField = Array(
                 "PRODUCT_ID" => $PRODUCT_ID,
@@ -202,9 +200,6 @@ if ($string[0] != "") {
 
         }
     }
-
-
-
 
 
     /*Если товар не нашелся*/
@@ -287,7 +282,6 @@ if ($string[0] != "") {
         $price = str_replace(',', '', $price); // replace coma
         $price = str_replace('р.', '', $price); // replace coma
         $price = str_replace(' ', '', $price); // replace coma
-        AddMessage2Log($price);
 
         $arField = Array(
             "PRODUCT_ID" => $PRODUCT_ID,

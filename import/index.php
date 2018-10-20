@@ -3,9 +3,12 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Импорт товаров");
 $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 ?>
+<?
+$import = new Import();
+$import->getCSV();
+?>
 <?if ($_POST['check-import'] == 'y') {?>
 
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <?
     set_time_limit(0);
 
