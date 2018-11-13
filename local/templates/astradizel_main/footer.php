@@ -169,19 +169,13 @@
             </div>
         </div>
     </div> <!-- End footer bottom area -->
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <!-- Latest jQuery form server -->
-<!--    <script src="https://code.jquery.com/jquery.min.js"></script>-->
-    <!-- Bootstrap JS form CDN -->
+
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <!-- jQuery sticky menu -->
+    <script src="<?=SITE_TEMPLATE_PATH?>/js/scriptbreaker-multiple-accordion-1.js"></script>
     <script src="<?=SITE_TEMPLATE_PATH?>/js/owl.carousel.min.js"></script>
     <script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.sticky.js"></script>
-    <!-- jQuery easing -->
     <script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.easing.1.3.min.js"></script>
-    <!-- Main Script -->
     <script src="<?=SITE_TEMPLATE_PATH?>/js/main.js"></script>
-    <script src="<?=SITE_TEMPLATE_PATH?>/js/scriptbreaker-multiple-accordion-1.js"></script>
 	<script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.inputmask.js"></script>
 
 </body>

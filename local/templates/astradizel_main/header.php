@@ -7,10 +7,10 @@ use Bitrix\Main\Page\Asset;
 <!DOCTYPE html>
 <html xml:lang="<?=LANGUAGE_ID?>" lang="<?=LANGUAGE_ID?>">
 <head>
+    <?$APPLICATION->ShowHead();?>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?$APPLICATION->ShowHead();?>
 
     <?
     Asset::getInstance()->addString("<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>");
