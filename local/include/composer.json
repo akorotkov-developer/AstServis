@@ -1,0 +1,8 @@
+{
+  "autoload": {
+    "files": [
+      "app/common.php",
+      "app/handlers.php"
+    ]
+  }
+}
