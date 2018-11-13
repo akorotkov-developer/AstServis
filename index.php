@@ -2,9 +2,9 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetPageProperty("tags", "ямз, двигатели ямз, запчасти явмз, дигатели тмз, запчасти тмз, переоборудование ямз");
 $APPLICATION->SetPageProperty("keywords_inner", "ямз, двигатели ямз, запчасти явмз, дигатели тмз, запчасти тмз, переоборудование ямз");
-$APPLICATION->SetPageProperty("title", "Главная страница");
+$APPLICATION->SetPageProperty("title", "ООО \"АСТ-сервис\" (двигатели ЯМЗ, запчасти ЯМЗ)");
 $APPLICATION->SetPageProperty("keywords", "ямз, двигатели ямз, запчасти явмз, дигатели тмз, запчасти тмз, переоборудование ямз");
-$APPLICATION->SetPageProperty("description", "Общая информация о всех разделах сайта.");
+$APPLICATION->SetPageProperty("description", "Двигатели и запчасти ЯМЗ, продажа запчастей ЯМЗ, двигателей ЯМЗ и комплектующих.");
 $APPLICATION->SetTitle("ООО \"АСТ-сервис\" (двигатели ЯМЗ, запчасти ЯМЗ)");
 ?><div class="slider-area">
 	<div class="zigzag-bottom">
@@ -164,80 +164,124 @@ $APPLICATION->SetTitle("ООО \"АСТ-сервис\" (двигатели ЯМ�
 			<div class="col-md-12">
 				<div class="latest-product">
 					<h2 class="section-title">Основная продукция</h2>
-					<div class="product-carousel">
-						<div class="single-product">
-							<div class="product-f-image">
- <img src="/local/templates/astradizel_main/products/02.jpg" alt="">
-								<div class="product-hover">
- <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> В корзину</a> <a href="single-product.html" class="view-details-link"><i class="fa fa-link"></i> Подробнее</a>
-								</div>
-							</div>
-							<h2><a href="single-product.html">ЯМЗ-650.10</a></h2>
-							<div class="product-carousel-price">
-								 $700.00 <del>$800.00</del>
-							</div>
-						</div>
-						<div class="single-product">
-							<div class="product-f-image">
- <img src="/local/templates/astradizel_main/products/01.jpg" alt="">
-								<div class="product-hover">
- <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> В корзину</a> <a href="single-product.html" class="view-details-link"><i class="fa fa-link"></i> Подробнее</a>
-								</div>
-							</div>
-							<h2><a href="single-product.html">ЯМЗ-238НД4 без КПП</a></h2>
-							<div class="product-carousel-price">
-								 $899.00 <del>$999.00</del>
-							</div>
-						</div>
-						<div class="single-product">
-							<div class="product-f-image">
- <img src="/local/templates/astradizel_main/products/03.png" alt="">
-								<div class="product-hover">
- <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> В корзину</a> <a href="single-product.html" class="view-details-link"><i class="fa fa-link"></i> Подробнее</a>
-								</div>
-							</div>
-							<h2><a href="single-product.html">ТНВД Компакт-40 евро-3</a></h2>
-							<div class="product-carousel-price">
-								 $400.00 <del>$425.00</del>
-							</div>
-						</div>
-						<div class="single-product">
-							<div class="product-f-image">
- <img src="/local/templates/astradizel_main/products/04.png" alt="">
-								<div class="product-hover">
- <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> В корзину</a> <a href="single-product.html" class="view-details-link"><i class="fa fa-link"></i> Подробнее</a>
-								</div>
-							</div>
-							<h2><a href="single-product.html">ЯМЗ-238Б-31 с КПП</a></h2>
-							<div class="product-carousel-price">
-								 $200.00 <del>$225.00</del>
-							</div>
-						</div>
-						<div class="single-product">
-							<div class="product-f-image">
- <img src="/local/templates/astradizel_main/products/05.jpg" alt="">
-								<div class="product-hover">
- <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> В корзину</a> <a href="single-product.html" class="view-details-link"><i class="fa fa-link"></i> Подробнее</a>
-								</div>
-							</div>
-							<h2><a href="single-product.html">ЯМЗ-236Б-3 без КПП</a></h2>
-							<div class="product-carousel-price">
-								 $1200.00 <del>$1355.00</del>
-							</div>
-						</div>
-						<div class="single-product">
-							<div class="product-f-image">
- <img src="/local/templates/astradizel_main/products/06.png" alt="">
-								<div class="product-hover">
- <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> В корзину</a> <a href="single-product.html" class="view-details-link"><i class="fa fa-link"></i> Подробнее</a>
-								</div>
-							</div>
-							<h2><a href="single-product.html">ЯМЗ-236НЕ с КПП</a></h2>
-							<div class="product-carousel-price">
-								 $400.00
-							</div>
-						</div>
-					</div>
+
+
+                    <?
+                    global $bbFilter;
+                    $bbFilter = Array("PROPERTY_MAIN_PRODUCT" => "Y");
+                    ?>
+
+                    <?$APPLICATION->IncludeComponent(
+                        "bitrix:catalog.section",
+                        "main_products",
+                        Array(
+                            "ACTION_VARIABLE" => "action",
+                            "ADD_PICT_PROP" => "MORE_PHOTO",
+                            "ADD_PROPERTIES_TO_BASKET" => "Y",
+                            "ADD_SECTIONS_CHAIN" => "N",
+                            "ADD_TO_BASKET_ACTION" => "ADD",
+                            "AJAX_MODE" => "N",
+                            "AJAX_OPTION_ADDITIONAL" => "",
+                            "AJAX_OPTION_HISTORY" => "N",
+                            "AJAX_OPTION_JUMP" => "N",
+                            "AJAX_OPTION_STYLE" => "Y",
+                            "BACKGROUND_IMAGE" => "UF_BACKGROUND_IMAGE",
+                            "BASKET_URL" => "/personal/cart/",
+                            "BROWSER_TITLE" => "-",
+                            "CACHE_FILTER" => "N",
+                            "CACHE_GROUPS" => "Y",
+                            "CACHE_TIME" => "36000000",
+                            "CACHE_TYPE" => "A",
+                            "COMPATIBLE_MODE" => "Y",
+                            "CONVERT_CURRENCY" => "Y",
+                            "CURRENCY_ID" => "RUB",
+                            "DATA_LAYER_NAME" => "dataLayer",
+                            "DETAIL_URL" => "",
+                            "DISABLE_INIT_JS_IN_COMPONENT" => "N",
+                            "DISCOUNT_PERCENT_POSITION" => "bottom-right",
+                            "DISPLAY_BOTTOM_PAGER" => "N",
+                            "DISPLAY_TOP_PAGER" => "N",
+                            "ELEMENT_SORT_FIELD" => "sort",
+                            "ELEMENT_SORT_FIELD2" => "id",
+                            "ELEMENT_SORT_ORDER" => "asc",
+                            "ELEMENT_SORT_ORDER2" => "desc",
+                            "FILTER_NAME" => "bbFilter",
+                            "HIDE_NOT_AVAILABLE" => "N",
+                            "HIDE_NOT_AVAILABLE_OFFERS" => "N",
+                            "IBLOCK_ID" => 5,
+                            "IBLOCK_TYPE" => "catalog",
+                            "INCLUDE_SUBSECTIONS" => "Y",
+                            "LABEL_PROP" => array("NEWPRODUCT"),
+                            "LABEL_PROP_MOBILE" => array(),
+                            "LABEL_PROP_POSITION" => "top-left",
+                            "LAZY_LOAD" => "Y",
+                            "LINE_ELEMENT_COUNT" => "3",
+                            "LOAD_ON_SCROLL" => "N",
+                            "MESSAGE_404" => "",
+                            "MESS_BTN_ADD_TO_BASKET" => "В корзину",
+                            "MESS_BTN_BUY" => "Купить",
+                            "MESS_BTN_DETAIL" => "Подробнее",
+                            "MESS_BTN_LAZY_LOAD" => "Показать ещё",
+                            "MESS_BTN_SUBSCRIBE" => "Подписаться",
+                            "MESS_NOT_AVAILABLE" => "Нет в наличии",
+                            "OFFERS_SORT_FIELD" => "sort",
+                            "OFFERS_SORT_FIELD2" => "id",
+                            "OFFERS_SORT_ORDER" => "asc",
+                            "OFFERS_SORT_ORDER2" => "desc",
+                            "OFFER_ADD_PICT_PROP" => "MORE_PHOTO",
+                            "PAGER_BASE_LINK_ENABLE" => "N",
+                            "PAGER_DESC_NUMBERING" => "N",
+                            "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+                            "PAGER_SHOW_ALL" => "N",
+                            "PAGER_SHOW_ALWAYS" => "N",
+                            "PAGER_TEMPLATE" => ".default",
+                            "PAGER_TITLE" => "Товары",
+                            "PAGE_ELEMENT_COUNT" => "18",
+                            "PARTIAL_PRODUCT_PROPERTIES" => "N",
+                            "PRICE_CODE" => array("BASE"),
+                            "PRICE_VAT_INCLUDE" => "Y",
+                            "PRODUCT_DISPLAY_MODE" => "Y",
+                            "PRODUCT_ID_VARIABLE" => "id",
+                            "PRODUCT_PROPS_VARIABLE" => "prop",
+                            "PRODUCT_QUANTITY_VARIABLE" => "",
+                            "PRODUCT_SUBSCRIPTION" => "Y",
+                            "PROPERTY_CODE_MOBILE" => array(),
+                            "RCM_PROD_ID" => "",
+                            "RCM_TYPE" => "",
+                            "SECTION_ID" => "",
+                            "SECTION_ID_VARIABLE" => "SECTION_ID",
+                            "SECTION_URL" => "",
+                            "SECTION_USER_FIELDS" => array("",""),
+                            "SEF_MODE" => "N",
+                            "SET_BROWSER_TITLE" => "Y",
+                            "SET_LAST_MODIFIED" => "N",
+                            "SET_META_DESCRIPTION" => "Y",
+                            "SET_META_KEYWORDS" => "Y",
+                            "SET_STATUS_404" => "N",
+                            "SET_TITLE" => "Y",
+                            "SHOW_404" => "N",
+                            "SHOW_ALL_WO_SECTION" => "N",
+                            "SHOW_CLOSE_POPUP" => "N",
+                            "SHOW_DISCOUNT_PERCENT" => "Y",
+                            "SHOW_FROM_SECTION" => "N",
+                            "SHOW_MAX_QUANTITY" => "N",
+                            "SHOW_OLD_PRICE" => "N",
+                            "SHOW_PRICE_COUNT" => "1",
+                            "SHOW_SLIDER" => "Y",
+                            "SLIDER_INTERVAL" => "3000",
+                            "SLIDER_PROGRESS" => "N",
+                            "TEMPLATE_THEME" => "blue",
+                            "USE_ENHANCED_ECOMMERCE" => "Y",
+                            "USE_MAIN_ELEMENT_SECTION" => "N",
+                            "USE_PRICE_COUNT" => "N",
+                            "USE_PRODUCT_QUANTITY" => "N",
+                            "USE_FILTER" => "Y",
+                            "INCLUDE_SUBSECTIONS" => "Y",
+                            "SHOW_ALL_WO_SECTION" => "Y"
+                        )
+                    );?>
+
+
 				</div>
 			</div>
 		</div>
@@ -302,109 +346,346 @@ $APPLICATION->SetTitle("ООО \"АСТ-сервис\" (двигатели ЯМ�
 			<div class="col-md-4">
 				<div class="single-product-widget">
 					<h2 class="product-wid-title">Двигатели ЯМЗ</h2>
- <a href="" class="wid-view-more">Все</a>
-					<div class="single-wid-product">
- <a href="single-product.html"><img src="/local/templates/astradizel_main/products/01.jpg" alt="" class="product-thumb"></a>
-						<h2><a href="single-product.html">ЯМЗ-6561.10</a></h2>
-						<div class="product-wid-rating">
- <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-						</div>
-						<div class="product-wid-price">
-							 $400.00 <del>$425.00</del>
-						</div>
-					</div>
-					<div class="single-wid-product">
- <a href="single-product.html"><img src="/local/templates/astradizel_main/products/02.jpg" alt="" class="product-thumb"></a>
-						<h2><a href="single-product.html">ЯМЗ-238БК-1 </a></h2>
-						<div class="product-wid-rating">
- <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-						</div>
-						<div class="product-wid-price">
-							 $400.00 <del>$425.00</del>
-						</div>
-					</div>
-					<div class="single-wid-product">
- <a href="single-product.html"><img src="/local/templates/astradizel_main/products/03.png" alt="" class="product-thumb"></a>
-						<h2><a href="single-product.html">ЯМЗ-7511.10-41 с КПП</a></h2>
-						<div class="product-wid-rating">
- <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-						</div>
-						<div class="product-wid-price">
-							 $400.00 <del>$425.00</del>
-						</div>
-					</div>
+ <a href="/catalog/dvigateli_yamz/" class="wid-view-more">Все</a>
+                    <?$APPLICATION->IncludeComponent(
+                        "bitrix:catalog.section",
+                        "main_pagelist",
+                        Array(
+                            "ACTION_VARIABLE" => "action",
+                            "ADD_PICT_PROP" => "MORE_PHOTO",
+                            "ADD_PROPERTIES_TO_BASKET" => "Y",
+                            "ADD_SECTIONS_CHAIN" => "N",
+                            "ADD_TO_BASKET_ACTION" => "ADD",
+                            "AJAX_MODE" => "N",
+                            "AJAX_OPTION_ADDITIONAL" => "",
+                            "AJAX_OPTION_HISTORY" => "N",
+                            "AJAX_OPTION_JUMP" => "N",
+                            "AJAX_OPTION_STYLE" => "Y",
+                            "BACKGROUND_IMAGE" => "UF_BACKGROUND_IMAGE",
+                            "BASKET_URL" => "/personal/cart/",
+                            "BROWSER_TITLE" => "-",
+                            "CACHE_FILTER" => "N",
+                            "CACHE_GROUPS" => "Y",
+                            "CACHE_TIME" => "36000000",
+                            "CACHE_TYPE" => "A",
+                            "COMPATIBLE_MODE" => "Y",
+                            "CONVERT_CURRENCY" => "Y",
+                            "CURRENCY_ID" => "RUB",
+                            "DATA_LAYER_NAME" => "dataLayer",
+                            "DETAIL_URL" => "",
+                            "DISABLE_INIT_JS_IN_COMPONENT" => "N",
+                            "DISCOUNT_PERCENT_POSITION" => "bottom-right",
+                            "DISPLAY_BOTTOM_PAGER" => "N",
+                            "DISPLAY_TOP_PAGER" => "N",
+                            "ELEMENT_SORT_FIELD" => "sort",
+                            "ELEMENT_SORT_FIELD2" => "id",
+                            "ELEMENT_SORT_ORDER" => "asc",
+                            "ELEMENT_SORT_ORDER2" => "desc",
+                            "FILTER_NAME" => "",
+                            "HIDE_NOT_AVAILABLE" => "N",
+                            "HIDE_NOT_AVAILABLE_OFFERS" => "N",
+                            "IBLOCK_ID" => 5,
+                            "IBLOCK_TYPE" => "catalog",
+                            "INCLUDE_SUBSECTIONS" => "Y",
+                            "LABEL_PROP" => array("NEWPRODUCT"),
+                            "LABEL_PROP_MOBILE" => array(),
+                            "LABEL_PROP_POSITION" => "top-left",
+                            "LAZY_LOAD" => "Y",
+                            "LINE_ELEMENT_COUNT" => "3",
+                            "LOAD_ON_SCROLL" => "N",
+                            "MESSAGE_404" => "",
+                            "MESS_BTN_ADD_TO_BASKET" => "В корзину",
+                            "MESS_BTN_BUY" => "Купить",
+                            "MESS_BTN_DETAIL" => "Подробнее",
+                            "MESS_BTN_LAZY_LOAD" => "Показать ещё",
+                            "MESS_BTN_SUBSCRIBE" => "Подписаться",
+                            "MESS_NOT_AVAILABLE" => "Нет в наличии",
+                            "OFFERS_SORT_FIELD" => "sort",
+                            "OFFERS_SORT_FIELD2" => "id",
+                            "OFFERS_SORT_ORDER" => "asc",
+                            "OFFERS_SORT_ORDER2" => "desc",
+                            "OFFER_ADD_PICT_PROP" => "MORE_PHOTO",
+                            "PAGER_BASE_LINK_ENABLE" => "N",
+                            "PAGER_DESC_NUMBERING" => "N",
+                            "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+                            "PAGER_SHOW_ALL" => "N",
+                            "PAGER_SHOW_ALWAYS" => "N",
+                            "PAGER_TEMPLATE" => ".default",
+                            "PAGER_TITLE" => "Товары",
+                            "PAGE_ELEMENT_COUNT" => "3",
+                            "PARTIAL_PRODUCT_PROPERTIES" => "N",
+                            "PRICE_CODE" => array("BASE"),
+                            "PRICE_VAT_INCLUDE" => "Y",
+                            "PRODUCT_DISPLAY_MODE" => "Y",
+                            "PRODUCT_ID_VARIABLE" => "id",
+                            "PRODUCT_PROPS_VARIABLE" => "prop",
+                            "PRODUCT_QUANTITY_VARIABLE" => "",
+                            "PRODUCT_SUBSCRIPTION" => "Y",
+                            "PROPERTY_CODE_MOBILE" => array(),
+                            "RCM_PROD_ID" => "",
+                            "RCM_TYPE" => "",
+                            "SECTION_ID" => 31,
+                            "SECTION_ID_VARIABLE" => "SECTION_ID",
+                            "SECTION_URL" => "",
+                            "SECTION_USER_FIELDS" => array("",""),
+                            "SEF_MODE" => "N",
+                            "SET_BROWSER_TITLE" => "Y",
+                            "SET_LAST_MODIFIED" => "N",
+                            "SET_META_DESCRIPTION" => "Y",
+                            "SET_META_KEYWORDS" => "Y",
+                            "SET_STATUS_404" => "N",
+                            "SET_TITLE" => "Y",
+                            "SHOW_404" => "N",
+                            "SHOW_ALL_WO_SECTION" => "N",
+                            "SHOW_CLOSE_POPUP" => "N",
+                            "SHOW_DISCOUNT_PERCENT" => "Y",
+                            "SHOW_FROM_SECTION" => "N",
+                            "SHOW_MAX_QUANTITY" => "N",
+                            "SHOW_OLD_PRICE" => "N",
+                            "SHOW_PRICE_COUNT" => "1",
+                            "SHOW_SLIDER" => "Y",
+                            "SLIDER_INTERVAL" => "3000",
+                            "SLIDER_PROGRESS" => "N",
+                            "TEMPLATE_THEME" => "blue",
+                            "USE_ENHANCED_ECOMMERCE" => "Y",
+                            "USE_MAIN_ELEMENT_SECTION" => "N",
+                            "USE_PRICE_COUNT" => "N",
+                            "USE_PRODUCT_QUANTITY" => "N",
+                            "USE_FILTER" => "Y",
+                            "INCLUDE_SUBSECTIONS" => "Y",
+                            "SHOW_ALL_WO_SECTION" => "Y"
+                        )
+                    );?>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="single-product-widget">
 					<h2 class="product-wid-title">Запчасти ЯМЗ</h2>
- <a href="#" class="wid-view-more">Все</a>
-					<div class="single-wid-product">
- <a href="single-product.html"><img src="/local/templates/astradizel_main/products/07.jpg" alt="" class="product-thumb"></a>
-						<h2><a href="single-product.html">БЛОК ЦИЛИНДРОВ В СБОРЕ</a></h2>
-						<div class="product-wid-rating">
- <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-						</div>
-						<div class="product-wid-price">
-							 $400.00 <del>$425.00</del>
-						</div>
-					</div>
-					<div class="single-wid-product">
- <a href="single-product.html"><img src="/local/templates/astradizel_main/products/08.jpg" alt="" class="product-thumb"></a>
-						<h2><a href="single-product.html">БЛОК ШЕСТЕРЕН ЗАДНЕГО ХОДА</a></h2>
-						<div class="product-wid-rating">
- <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-						</div>
-						<div class="product-wid-price">
-							 $400.00 <del>$425.00</del>
-						</div>
-					</div>
-					<div class="single-wid-product">
- <a href="single-product.html"><img src="/local/templates/astradizel_main/products/09.jpg" alt="" class="product-thumb"></a>
-						<h2><a href="single-product.html">БОЛТ</a></h2>
-						<div class="product-wid-rating">
- <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-						</div>
-						<div class="product-wid-price">
-							 $400.00 <del>$425.00</del>
-						</div>
-					</div>
+ <a href="/catalog/zapchasti_yamz/" class="wid-view-more">Все</a>
+                    <?$APPLICATION->IncludeComponent(
+                        "bitrix:catalog.section",
+                        "main_pagelist",
+                        Array(
+                            "ACTION_VARIABLE" => "action",
+                            "ADD_PICT_PROP" => "MORE_PHOTO",
+                            "ADD_PROPERTIES_TO_BASKET" => "Y",
+                            "ADD_SECTIONS_CHAIN" => "N",
+                            "ADD_TO_BASKET_ACTION" => "ADD",
+                            "AJAX_MODE" => "N",
+                            "AJAX_OPTION_ADDITIONAL" => "",
+                            "AJAX_OPTION_HISTORY" => "N",
+                            "AJAX_OPTION_JUMP" => "N",
+                            "AJAX_OPTION_STYLE" => "Y",
+                            "BACKGROUND_IMAGE" => "UF_BACKGROUND_IMAGE",
+                            "BASKET_URL" => "/personal/cart/",
+                            "BROWSER_TITLE" => "-",
+                            "CACHE_FILTER" => "N",
+                            "CACHE_GROUPS" => "Y",
+                            "CACHE_TIME" => "36000000",
+                            "CACHE_TYPE" => "A",
+                            "COMPATIBLE_MODE" => "Y",
+                            "CONVERT_CURRENCY" => "Y",
+                            "CURRENCY_ID" => "RUB",
+                            "DATA_LAYER_NAME" => "dataLayer",
+                            "DETAIL_URL" => "",
+                            "DISABLE_INIT_JS_IN_COMPONENT" => "N",
+                            "DISCOUNT_PERCENT_POSITION" => "bottom-right",
+                            "DISPLAY_BOTTOM_PAGER" => "N",
+                            "DISPLAY_TOP_PAGER" => "N",
+                            "ELEMENT_SORT_FIELD" => "sort",
+                            "ELEMENT_SORT_FIELD2" => "id",
+                            "ELEMENT_SORT_ORDER" => "asc",
+                            "ELEMENT_SORT_ORDER2" => "desc",
+                            "FILTER_NAME" => "",
+                            "HIDE_NOT_AVAILABLE" => "N",
+                            "HIDE_NOT_AVAILABLE_OFFERS" => "N",
+                            "IBLOCK_ID" => 5,
+                            "IBLOCK_TYPE" => "catalog",
+                            "INCLUDE_SUBSECTIONS" => "Y",
+                            "LABEL_PROP" => array("NEWPRODUCT"),
+                            "LABEL_PROP_MOBILE" => array(),
+                            "LABEL_PROP_POSITION" => "top-left",
+                            "LAZY_LOAD" => "Y",
+                            "LINE_ELEMENT_COUNT" => "3",
+                            "LOAD_ON_SCROLL" => "N",
+                            "MESSAGE_404" => "",
+                            "MESS_BTN_ADD_TO_BASKET" => "В корзину",
+                            "MESS_BTN_BUY" => "Купить",
+                            "MESS_BTN_DETAIL" => "Подробнее",
+                            "MESS_BTN_LAZY_LOAD" => "Показать ещё",
+                            "MESS_BTN_SUBSCRIBE" => "Подписаться",
+                            "MESS_NOT_AVAILABLE" => "Нет в наличии",
+                            "OFFERS_SORT_FIELD" => "sort",
+                            "OFFERS_SORT_FIELD2" => "id",
+                            "OFFERS_SORT_ORDER" => "asc",
+                            "OFFERS_SORT_ORDER2" => "desc",
+                            "OFFER_ADD_PICT_PROP" => "MORE_PHOTO",
+                            "PAGER_BASE_LINK_ENABLE" => "N",
+                            "PAGER_DESC_NUMBERING" => "N",
+                            "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+                            "PAGER_SHOW_ALL" => "N",
+                            "PAGER_SHOW_ALWAYS" => "N",
+                            "PAGER_TEMPLATE" => ".default",
+                            "PAGER_TITLE" => "Товары",
+                            "PAGE_ELEMENT_COUNT" => "3",
+                            "PARTIAL_PRODUCT_PROPERTIES" => "N",
+                            "PRICE_CODE" => array("BASE"),
+                            "PRICE_VAT_INCLUDE" => "Y",
+                            "PRODUCT_DISPLAY_MODE" => "Y",
+                            "PRODUCT_ID_VARIABLE" => "id",
+                            "PRODUCT_PROPS_VARIABLE" => "prop",
+                            "PRODUCT_QUANTITY_VARIABLE" => "",
+                            "PRODUCT_SUBSCRIPTION" => "Y",
+                            "PROPERTY_CODE_MOBILE" => array(),
+                            "RCM_PROD_ID" => "",
+                            "RCM_TYPE" => "",
+                            "SECTION_ID" => 32,
+                            "SECTION_ID_VARIABLE" => "SECTION_ID",
+                            "SECTION_URL" => "",
+                            "SECTION_USER_FIELDS" => array("",""),
+                            "SEF_MODE" => "N",
+                            "SET_BROWSER_TITLE" => "Y",
+                            "SET_LAST_MODIFIED" => "N",
+                            "SET_META_DESCRIPTION" => "Y",
+                            "SET_META_KEYWORDS" => "Y",
+                            "SET_STATUS_404" => "N",
+                            "SET_TITLE" => "Y",
+                            "SHOW_404" => "N",
+                            "SHOW_ALL_WO_SECTION" => "N",
+                            "SHOW_CLOSE_POPUP" => "N",
+                            "SHOW_DISCOUNT_PERCENT" => "Y",
+                            "SHOW_FROM_SECTION" => "N",
+                            "SHOW_MAX_QUANTITY" => "N",
+                            "SHOW_OLD_PRICE" => "N",
+                            "SHOW_PRICE_COUNT" => "1",
+                            "SHOW_SLIDER" => "Y",
+                            "SLIDER_INTERVAL" => "3000",
+                            "SLIDER_PROGRESS" => "N",
+                            "TEMPLATE_THEME" => "blue",
+                            "USE_ENHANCED_ECOMMERCE" => "Y",
+                            "USE_MAIN_ELEMENT_SECTION" => "N",
+                            "USE_PRICE_COUNT" => "N",
+                            "USE_PRODUCT_QUANTITY" => "N",
+                            "USE_FILTER" => "Y",
+                            "INCLUDE_SUBSECTIONS" => "Y",
+                            "SHOW_ALL_WO_SECTION" => "Y"
+                        )
+                    );?>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="single-product-widget">
 					<h2 class="product-wid-title">Ремкомплекты ЯМЗ</h2>
- <a href="#" class="wid-view-more">Все</a>
-					<div class="single-wid-product">
- <a href="single-product.html"><img src="/local/templates/astradizel_main/products/10.jpg" alt="" class="product-thumb"></a>
-						<h2><a href="single-product.html">Комплект прокладок двигателя ЯМЗ-236</a></h2>
-						<div class="product-wid-rating">
- <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-						</div>
-						<div class="product-wid-price">
-							 $400.00 <del>$425.00</del>
-						</div>
-					</div>
-					<div class="single-wid-product">
- <a href="single-product.html"><img src="/local/templates/astradizel_main/products/11.jpg" alt="" class="product-thumb"></a>
-						<h2><a href="single-product.html">Ремкомплект уплотнений деталей двигателя.236,238 </a></h2>
-						<div class="product-wid-rating">
- <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-						</div>
-						<div class="product-wid-price">
-							 $400.00 <del>$425.00</del>
-						</div>
-					</div>
-					<div class="single-wid-product">
- <a href="single-product.html"><img src="/local/templates/astradizel_main/products/12.jpg" alt="" class="product-thumb"></a>
-						<h2><a href="single-product.html">Комплект ремней на двигатели ЯМЗ-236М2, 238М2,Б,Д,НД</a></h2>
-						<div class="product-wid-rating">
- <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-						</div>
-						<div class="product-wid-price">
-							 $400.00 <del>$425.00</del>
-						</div>
-					</div>
+ <a href="/catalog/remkomplekty_yamz/" class="wid-view-more">Все</a>
+                    <?$APPLICATION->IncludeComponent(
+                        "bitrix:catalog.section",
+                        "main_pagelist",
+                        Array(
+                            "ACTION_VARIABLE" => "action",
+                            "ADD_PICT_PROP" => "MORE_PHOTO",
+                            "ADD_PROPERTIES_TO_BASKET" => "Y",
+                            "ADD_SECTIONS_CHAIN" => "N",
+                            "ADD_TO_BASKET_ACTION" => "ADD",
+                            "AJAX_MODE" => "N",
+                            "AJAX_OPTION_ADDITIONAL" => "",
+                            "AJAX_OPTION_HISTORY" => "N",
+                            "AJAX_OPTION_JUMP" => "N",
+                            "AJAX_OPTION_STYLE" => "Y",
+                            "BACKGROUND_IMAGE" => "UF_BACKGROUND_IMAGE",
+                            "BASKET_URL" => "/personal/cart/",
+                            "BROWSER_TITLE" => "-",
+                            "CACHE_FILTER" => "N",
+                            "CACHE_GROUPS" => "Y",
+                            "CACHE_TIME" => "36000000",
+                            "CACHE_TYPE" => "A",
+                            "COMPATIBLE_MODE" => "Y",
+                            "CONVERT_CURRENCY" => "Y",
+                            "CURRENCY_ID" => "RUB",
+                            "DATA_LAYER_NAME" => "dataLayer",
+                            "DETAIL_URL" => "",
+                            "DISABLE_INIT_JS_IN_COMPONENT" => "N",
+                            "DISCOUNT_PERCENT_POSITION" => "bottom-right",
+                            "DISPLAY_BOTTOM_PAGER" => "N",
+                            "DISPLAY_TOP_PAGER" => "N",
+                            "ELEMENT_SORT_FIELD" => "sort",
+                            "ELEMENT_SORT_FIELD2" => "id",
+                            "ELEMENT_SORT_ORDER" => "asc",
+                            "ELEMENT_SORT_ORDER2" => "desc",
+                            "FILTER_NAME" => "",
+                            "HIDE_NOT_AVAILABLE" => "N",
+                            "HIDE_NOT_AVAILABLE_OFFERS" => "N",
+                            "IBLOCK_ID" => 5,
+                            "IBLOCK_TYPE" => "catalog",
+                            "INCLUDE_SUBSECTIONS" => "Y",
+                            "LABEL_PROP" => array("NEWPRODUCT"),
+                            "LABEL_PROP_MOBILE" => array(),
+                            "LABEL_PROP_POSITION" => "top-left",
+                            "LAZY_LOAD" => "Y",
+                            "LINE_ELEMENT_COUNT" => "3",
+                            "LOAD_ON_SCROLL" => "N",
+                            "MESSAGE_404" => "",
+                            "MESS_BTN_ADD_TO_BASKET" => "В корзину",
+                            "MESS_BTN_BUY" => "Купить",
+                            "MESS_BTN_DETAIL" => "Подробнее",
+                            "MESS_BTN_LAZY_LOAD" => "Показать ещё",
+                            "MESS_BTN_SUBSCRIBE" => "Подписаться",
+                            "MESS_NOT_AVAILABLE" => "Нет в наличии",
+                            "OFFERS_SORT_FIELD" => "sort",
+                            "OFFERS_SORT_FIELD2" => "id",
+                            "OFFERS_SORT_ORDER" => "asc",
+                            "OFFERS_SORT_ORDER2" => "desc",
+                            "OFFER_ADD_PICT_PROP" => "MORE_PHOTO",
+                            "PAGER_BASE_LINK_ENABLE" => "N",
+                            "PAGER_DESC_NUMBERING" => "N",
+                            "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+                            "PAGER_SHOW_ALL" => "N",
+                            "PAGER_SHOW_ALWAYS" => "N",
+                            "PAGER_TEMPLATE" => ".default",
+                            "PAGER_TITLE" => "Товары",
+                            "PAGE_ELEMENT_COUNT" => "3",
+                            "PARTIAL_PRODUCT_PROPERTIES" => "N",
+                            "PRICE_CODE" => array("BASE"),
+                            "PRICE_VAT_INCLUDE" => "Y",
+                            "PRODUCT_DISPLAY_MODE" => "Y",
+                            "PRODUCT_ID_VARIABLE" => "id",
+                            "PRODUCT_PROPS_VARIABLE" => "prop",
+                            "PRODUCT_QUANTITY_VARIABLE" => "",
+                            "PRODUCT_SUBSCRIPTION" => "Y",
+                            "PROPERTY_CODE_MOBILE" => array(),
+                            "RCM_PROD_ID" => "",
+                            "RCM_TYPE" => "",
+                            "SECTION_ID" => 33,
+                            "SECTION_ID_VARIABLE" => "SECTION_ID",
+                            "SECTION_URL" => "",
+                            "SECTION_USER_FIELDS" => array("",""),
+                            "SEF_MODE" => "N",
+                            "SET_BROWSER_TITLE" => "Y",
+                            "SET_LAST_MODIFIED" => "N",
+                            "SET_META_DESCRIPTION" => "Y",
+                            "SET_META_KEYWORDS" => "Y",
+                            "SET_STATUS_404" => "N",
+                            "SET_TITLE" => "Y",
+                            "SHOW_404" => "N",
+                            "SHOW_ALL_WO_SECTION" => "N",
+                            "SHOW_CLOSE_POPUP" => "N",
+                            "SHOW_DISCOUNT_PERCENT" => "Y",
+                            "SHOW_FROM_SECTION" => "N",
+                            "SHOW_MAX_QUANTITY" => "N",
+                            "SHOW_OLD_PRICE" => "N",
+                            "SHOW_PRICE_COUNT" => "1",
+                            "SHOW_SLIDER" => "Y",
+                            "SLIDER_INTERVAL" => "3000",
+                            "SLIDER_PROGRESS" => "N",
+                            "TEMPLATE_THEME" => "blue",
+                            "USE_ENHANCED_ECOMMERCE" => "Y",
+                            "USE_MAIN_ELEMENT_SECTION" => "N",
+                            "USE_PRICE_COUNT" => "N",
+                            "USE_PRODUCT_QUANTITY" => "N",
+                            "USE_FILTER" => "Y",
+                            "INCLUDE_SUBSECTIONS" => "Y",
+                            "SHOW_ALL_WO_SECTION" => "Y"
+                        )
+                    );?>
 				</div>
 			</div>
 		</div>

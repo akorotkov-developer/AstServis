@@ -2,6 +2,7 @@
 IncludeTemplateLangFile($_SERVER["DOCUMENT_ROOT"]."/bitrix/templates/".SITE_TEMPLATE_ID."/header.php");
 CJSCore::Init(array("fx"));
 CModule::IncludeModule('iblock');
+use Bitrix\Main\Page\Asset;
 ?>
 <!DOCTYPE html>
 <html xml:lang="<?=LANGUAGE_ID?>" lang="<?=LANGUAGE_ID?>">
@@ -9,22 +10,25 @@ CModule::IncludeModule('iblock');
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <?$APPLICATION->ShowHead();?>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!-- Custom CSS -->
+    <?
+    Asset::getInstance()->addString("<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>");
+    Asset::getInstance()->addString("<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>");
+    Asset::getInstance()->addString("<link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>");
+    Asset::getInstance()->addString("<link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>");
+    Asset::getInstance()->addString("<link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>");
+    ?>
 
-	<?$APPLICATION->ShowHead();?>
 	<?
-	$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/owl.carousel.css", true);
-	$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/responsive.css", true);
-	$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/style.css", true);
+    Asset::getInstance()->addCss("http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css");
+    Asset::getInstance()->addCss("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/owl.carousel.css");
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/responsive.css");
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/style.css");
 	?>
+
+
 	<title><?$APPLICATION->ShowTitle()?></title>
 </head>
 <body>
