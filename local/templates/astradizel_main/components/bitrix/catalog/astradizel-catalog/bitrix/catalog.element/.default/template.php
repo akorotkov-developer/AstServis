@@ -135,6 +135,8 @@ if ($arResult["PROPERTIES"]["SHORT_NAME"]["VALUE"] != "") {
         <div class="col-sm-7">
             <div class="product-inner">
                 <h2 class="product-name"><?=$arResult["NAME"]?></h2>
+                <p><b><?=$arResult["PROPERTIES"]["APPELLATION"]["VALUE"]?></b></p>
+
                 <?/*if ($arResult["PROPERTIES"]["SHORT_NAME"]["VALUE"]) {?>
                     <h2 class="product-name"><?=$arResult["PROPERTIES"]["SHORT_NAME"]["VALUE"]?></h2>
                 <?} else {?>
@@ -548,7 +550,7 @@ if ($arResult["PROPERTIES"]["SHORT_NAME"]["VALUE"] != "") {
                             <p><b>оплата:</b> <?=$arResult["PROPERTIES"]["PAY"]["VALUE"];?></p>
                         <?}?>
                         <?if ($arResult["PROPERTIES"]["SROK"]["VALUE"]) {?>
-                            <p><b>срок поставки:</b> <?=$arResult["PROPERTIES"]["SROK"]["VALUE"];?></p>
+                            <p><b>срок поставки/к-во в наличии:</b> <?=$arResult["PROPERTIES"]["SROK"]["VALUE"];?></p>
                         <?}?>
                     </div>
 
@@ -831,23 +833,23 @@ if ($arResult["PROPERTIES"]["SHORT_NAME"]["VALUE"] != "") {
             <div role="tabpanel">
                 <ul class="product-tab" role="tablist">
                     <?if ($arResult["PROPERTIES"]["TECHNICAL"]["VALUE"]["TEXT"]) {?>
-                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Технические характеристики</a></li>
+                        <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Технические характеристики</a></li>
                     <?}?>
                     <?if ($arResult["PREVIEW_TEXT"] and $arResult["PROPERTIES"]["TECHNICAL"]["VALUE"]["TEXT"] or $arResult["PROPERTIES"]["KOMPLEKTNOST"]["VALUE"]["TEXT"]) {?>
-                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Описание</a></li>
+                        <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Описание</a></li>
                     <?} elseif (!$arResult["PROPERTIES"]["TECHNICAL"]["VALUE"]["TEXT"] and !$arResult["PROPERTIES"]["KOMPLEKTNOST"]["VALUE"]["TEXT"] and $arResult["PREVIEW_TEXT"]) {?>
                         <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Описание</a></li>
                     <?} elseif (!$arResult["PREVIEW_TEXT"]) {}?>
                 </ul>
                 <div class="tab-content">
                     <?if ($arResult["PROPERTIES"]["TECHNICAL"]["VALUE"]["TEXT"] or $arResult["PROPERTIES"]["KOMPLEKTNOST"]["VALUE"]["TEXT"]) {?>
-                        <div role="tabpanel" class="tab-pane fade in active" id="home">
+                        <div role="tabpanel" class="tab-pane fade" id="home">
                             <?if ($arResult["PROPERTIES"]["TECHNICAL"]["VALUE"]["TEXT"]) {?>
                                 <h2>Технические характеристики</h2>
                                 <?=$arResult["PROPERTIES"]["TECHNICAL"]["~VALUE"]["TEXT"];?>
                             <?}?>
                             <?if ($arResult["PROPERTIES"]["KOMPLEKTNOST"]["VALUE"]["TEXT"]) {?>
-                                <h2>Комплектность двигателя</h2>
+                                <h2>Комплектность изделия</h2>
                                 <?=$arResult["PROPERTIES"]["KOMPLEKTNOST"]["~VALUE"]["TEXT"];?>
                             <?}?>
                         </div>
@@ -858,7 +860,7 @@ if ($arResult["PROPERTIES"]["SHORT_NAME"]["VALUE"] != "") {
                             <?=$arResult["PREVIEW_TEXT"]?>
                         </div>
                     <?} elseif ($arResult["PREVIEW_TEXT"] and $arResult["PROPERTIES"]["TECHNICAL"]["VALUE"]["TEXT"]) {?>
-                        <div role="tabpanel" class="tab-pane fade" id="profile">
+                        <div role="tabpanel" class="tab-pane fade in active" id="profile">
                             <h2>Описание</h2>
                             <?=$arResult["PREVIEW_TEXT"]?>
                         </div>

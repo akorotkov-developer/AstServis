@@ -7,7 +7,6 @@ Allow: /bitrix/*.gif
 Allow: /bitrix/*.jpg
 Allow: /bitrix/*.js
 Allow: /bitrix/*.png
-#Allow: /catalog/
 Allow: /upload/
 Allow: /upload/iblock/
 Allow: /*comments
@@ -38,7 +37,7 @@ Disallow: /*show_sql_stat=
 Disallow: /500.html
 Disallow: /auth.php
 Disallow: /auth/
-#Disallow: /bitrix/
+Disallow: /bitrix/
 Disallow: /cart/
 Disallow: /import/
 Disallow: /novye_tovary_946/
@@ -88,7 +87,6 @@ Allow: /bitrix/*.gif
 Allow: /bitrix/*.jpg
 Allow: /bitrix/*.js
 Allow: /bitrix/*.png
-#Allow: /catalog/
 Allow: /upload/
 Allow: /upload/iblock/
 Allow: /*comments
@@ -173,7 +171,6 @@ Allow: /bitrix/*.gif
 Allow: /bitrix/*.jpg
 Allow: /bitrix/*.js
 Allow: /bitrix/*.png
-#Allow: /catalog/
 Allow: /upload/
 Allow: /upload/iblock/
 Allow: /*comments
@@ -252,7 +249,6 @@ Allow: /bitrix/*.gif
 Allow: /bitrix/*.jpg
 Allow: /bitrix/*.js
 Allow: /bitrix/*.png
- #Allow: /catalog/
 Allow: /upload/
 Allow: /upload/iblock/
 Allow: /*comments
