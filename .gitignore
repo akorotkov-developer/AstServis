@@ -8,6 +8,8 @@
 /bitrix/php_interface/*.bak
 !/bitrix/templates/
 /upload
+/local/include/vendor
+/.idea/
 
-# исключаем часть файлоы kung-fu 
+# пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ kung-fu 
 /images/
