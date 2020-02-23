@@ -88,7 +88,7 @@ use Bitrix\Main\Page\Asset;
             "MENU_CACHE_GET_VARS" => array(""),
             "MENU_CACHE_TIME" => "3600",
             "MENU_CACHE_TYPE" => "N",
-            "MENU_CACHE_USE_GROUPS" => "Y",
+            "MENU_CACHE_USE_GROUPS" => "N",
             "ROOT_MENU_TYPE" => "top",
             "USE_EXT" => "N"
         )
@@ -134,7 +134,7 @@ use Bitrix\Main\Page\Asset;
                                 "ROOT_MENU_TYPE" => "catalog",
                                 "MENU_CACHE_TYPE" => "A",
                                 "MENU_CACHE_TIME" => "36000000",
-                                "MENU_CACHE_USE_GROUPS" => "Y",
+                                "MENU_CACHE_USE_GROUPS" => "N",
                                 "MENU_CACHE_GET_VARS" => array(
                                 ),
                                 "MAX_LEVEL" => "4",
@@ -158,7 +158,7 @@ use Bitrix\Main\Page\Asset;
                                 "ROOT_MENU_TYPE" => "left-n",
                                 "MENU_CACHE_TYPE" => "A",
                                 "MENU_CACHE_TIME" => "36000000",
-                                "MENU_CACHE_USE_GROUPS" => "Y",
+                                "MENU_CACHE_USE_GROUPS" => "N",
                                 "MENU_CACHE_GET_VARS" => array(
                                 ),
                                 "MAX_LEVEL" => "4",

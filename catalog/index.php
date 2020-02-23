@@ -10,6 +10,7 @@ $APPLICATION->SetTitle("Каталог продукции");
 	"astradizel-catalog", 
 	array(
 		"IBLOCK_TYPE" => "catalog",
+		"MENU_CACHE_USE_GROUPS" => "N",
 		"IBLOCK_ID" => "5",
 		"TEMPLATE_THEME" => "site",
 		"HIDE_NOT_AVAILABLE" => "N",
