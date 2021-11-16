@@ -5,16 +5,16 @@ $APPLICATION->SetPageProperty("keywords_inner", "АСТ-сервис");
 $APPLICATION->SetPageProperty("keywords", "АСТ-сервис");
 $APPLICATION->SetTitle("Контакты");
 ?><p>
-	 Звоните:&nbsp;(4852) 78-92-78
+    Звоните:&nbsp;<a href="tel: +74852789278">(4852) 78-92-78</a>
 </p>
 <p>
-	 Факс:&nbsp;(4852) 737-888
+    Факс:&nbsp;<a href="tel: +74852789278">(4852) 737-888</a>
 </p>
 <p>
-	Viber: +7-920-658-92-78
+    Viber: <a href="https://viber.click/79206589278">+7-920-658-92-78</a>
 </p>
 <p>
-	 Пишите на e-mail:&nbsp;<a href="mailto:%20dkorotkov@mail.ru">ast789278@mail.ru</a>
+	 Пишите на e-mail:&nbsp;<a href="mailto: dkorotkov@mail.ru">dkorotkov@mail.ru</a>
 </p>
  Почтовый адрес:&nbsp;150040, Ярославска обл., г.Ярославль, пр.Ленина, д.18/50, оф.89<br>
  <br>
@@ -22,24 +22,21 @@ $APPLICATION->SetTitle("Контакты");
  <br>
 
 <?$APPLICATION->IncludeComponent(
-	"bitrix:form.result.new", 
-	"order_form", 
-	array(
-		"SEF_MODE" => "Y",
-		"WEB_FORM_ID" => "2",
-		"LIST_URL" => "",
-		"EDIT_URL" => "result_edit.php",
-		"SUCCESS_URL" => "",
-		"CHAIN_ITEM_TEXT" => "",
-		"CHAIN_ITEM_LINK" => "",
-		"IGNORE_CUSTOM_TEMPLATE" => "Y",
-		"USE_EXTENDED_ERRORS" => "Y",
-		"CACHE_TYPE" => "A",
+	"bitrix:form.result.new",
+	"order_form",
+	Array(
 		"CACHE_TIME" => "3600",
+		"CACHE_TYPE" => "A",
+		"CHAIN_ITEM_LINK" => "",
+		"CHAIN_ITEM_TEXT" => "",
+		"COMPONENT_TEMPLATE" => "order_form",
+		"EDIT_URL" => "result_edit.php",
+		"IGNORE_CUSTOM_TEMPLATE" => "Y",
+		"LIST_URL" => "",
 		"SEF_FOLDER" => "/",
-		"COMPONENT_TEMPLATE" => "order_form"
-	),
-	false
-);?>
-
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+		"SEF_MODE" => "Y",
+		"SUCCESS_URL" => "",
+		"USE_EXTENDED_ERRORS" => "Y",
+		"WEB_FORM_ID" => "2"
+	)
+);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

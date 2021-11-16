@@ -7,6 +7,21 @@ use Bitrix\Main\Page\Asset;
 <!DOCTYPE html>
 <html xml:lang="<?=LANGUAGE_ID?>" lang="<?=LANGUAGE_ID?>">
 <head>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(84351340, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/84351340" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
     <?$APPLICATION->ShowHead();?>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8">
@@ -41,7 +56,7 @@ use Bitrix\Main\Page\Asset;
                         <h1><a href="/">АСТ<span>-СЕРВИС</span></a></h1>
                     </div>
                     <div class="phone">
-                        <h1><a href="tel: +74852789278"><span>(4852)90-66-00</span></a></h1>
+                        <h1><a href="tel: +74852906600"><span>(4852)90-66-00</span></a></h1>
                     </div>
                 </div>
                 <div class="col-sm-4">
