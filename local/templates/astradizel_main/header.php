@@ -170,7 +170,7 @@ use Bitrix\Main\Page\Asset;
                             "bitrix:menu",
                             "left",
                             array(
-                                "ROOT_MENU_TYPE" => "left-n",
+                                "ROOT_MENU_TYPE" => "leftn",
                                 "MENU_CACHE_TYPE" => "A",
                                 "MENU_CACHE_TIME" => "36000000",
                                 "MENU_CACHE_USE_GROUPS" => "N",
