@@ -92,11 +92,11 @@
                 </div>
 
                 <div class="col-md-3 col-sm-6">
-                    <div class="footer-newsletter">
+                    <!--<div class="footer-newsletter">
                         <h2 class="footer-wid-title">Обратный звонок</h2>
                         <p>Вы можете заказать обратный звонок и мы Вам перезвоним</p>
                         <div class="newsletter-form">
-							<?$APPLICATION->IncludeComponent("bitrix:form.result.new","ord_phone",Array(
+							<?/*$APPLICATION->IncludeComponent("bitrix:form.result.new","ord_phone",Array(
 								"SEF_MODE" => "Y",
 								"WEB_FORM_ID" => 3,
 									"LIST_URL" => "",
@@ -112,9 +112,9 @@
 									"VARIABLE_ALIASES" => Array(
 							)
 								)
-							);?>
+							);*/?>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
