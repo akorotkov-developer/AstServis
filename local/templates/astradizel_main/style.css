@@ -195,6 +195,7 @@ z-index: 9;
 .slide-one {background-image: url(img/slide-1.jpg)}
 .slide-two {background-image: url(img/slide-2.jpg)}
 .slide-three {background-image: url(img/slide-3.jpg)}
+.slide-four {background-image: url(img/slide-4.jpg)}
 .slide-text {color: #fff;font-size: 18px;font-weight: 200}
 .slide-text h2 {
   font-size: 45px;font-weight: 200
@@ -1100,7 +1101,7 @@ ul.topnav li a {
     display: block;
     font-size: 20px;
     font-weight: 700;
-    line-height: 10px;
+    line-height: 20px;
     padding: 10px 5px;
     text-decoration: none;
     /* background: #f2f2f2; */

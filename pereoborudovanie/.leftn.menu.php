@@ -8,25 +8,25 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Комплекты переоборудования на двигателель ЯМЗ", 
+		"Комплекты переоборудования на двигателель Ярославль", 
 		"/pereoborudovanie/komplekty-pereoborudovaniya-na-dvigatelel-yamz.php", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Переоборудование техники на двигатель ЯМЗ", 
+		"Переоборудование техники на двигатель Ярославль", 
 		"/pereoborudovanie/pereoborudovanie-tekhniki-na-dvigatel-yamz.php", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Ремонт", 
+		"Ремонт двигателей Ярославль",
 		"/pereoborudovanie/remont.php", 
 		Array(), 
 		Array(), 
 		"" 
-	),
+	)
 );
 ?>

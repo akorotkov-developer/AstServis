@@ -138,6 +138,24 @@ class StandardComponent extends CBitrixComponent
         }
     }
 
+    public static function removeForbiddenWords($string)
+    {
+        /*$forbiddenWords = [
+            'Ярославль' => 'Ярославль',
+            'язда' => 'Ярославль',
+            'Тутаев' => 'Тутаев',
+            'белаз' => 'РБ',
+            'Автодизель' => 'Ярославль',
+            'ОАО "Автодизель"' => 'Ярославль'
+        ];
+
+        foreach ($forbiddenWords as $key => $value) {
+            $string = preg_replace("/(^|\\s)($key)(\\s|,|\\.|$)/iu", "$1$value$3", $string);
+        }*/
+
+        return $string;
+    }
+
     /**
      * Основная логика компонента
      */
@@ -219,21 +237,21 @@ class StandardComponent extends CBitrixComponent
             sleep(1);
             CModule::IncludeModule("iblock");
             $string = array();
-            $string[0] = $_POST['string0'];
-            $string[1] = $_POST['string1'];
-            $string[2] = $_POST['string2'];
-            $string[3] = $_POST['string3'];
-            $string[4] = $_POST['string4'];
-            $string[5] = $_POST['string5'];
-            $string[6] = $_POST['string6'];
-            $string[7] = $_POST['string7'];
-            $string[8] = $_POST['string8'];
-            $string[9] = $_POST['string9'];
-            $string[10] = $_POST['string10'];
-            $string[11] = $_POST['string11'];
-            $string[12] = $_POST['string12'];
-            $string[14] = $_POST['string14'];
-            $string[15] = $_POST['string15'];
+            $string[0] = $_POST['string0']; // Раздел
+            $string[1] = $_POST['string1']; // SHORT_NAME - короткое имя
+            $string[2] = $_POST['string2']; // NAME - название
+            $string[3] = $_POST['string3']; // APPELLATION - Наименование продукции
+            $string[4] = $_POST['string4']; // Цена
+            $string[5] = $_POST['string5']; // Ссылка на фотографию
+            $string[6] = $_POST['string6']; // Описание PREVIEW_TEXT
+            $string[7] = $_POST['string7']; // Описание PREVIEW_TEXT
+            $string[8] = $_POST['string8']; // Описание PREVIEW_TEXT
+            $string[9] = $_POST['string9']; // TECHNICAL - Технические характеристики
+            $string[10] = $_POST['string10']; // KOMPLEKTNOST - Комплектность
+            $string[11] = $_POST['string11']; // PAY - Оплата
+            $string[12] = $_POST['string12']; // SROK - Срок поставки
+            $string[14] = $_POST['string14']; // CREATOR - Производитель
+            $string[15] = $_POST['string15']; // KEY_WORDS_STRING - Ключевые слова
 
 
             /*ФУНКЦИИ ДЛЯ ПОИСКА И СОЗДАНИЯ КАТАЛОГА*/
@@ -242,11 +260,11 @@ class StandardComponent extends CBitrixComponent
                 $lat = array('A', 'B', 'V', 'G', 'D', 'E', 'E', 'Gh', 'Z', 'I', 'Y', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'F', 'H', 'C', 'Ch', 'Sh', 'Sch', 'Y', 'Y', 'Y', 'E', 'Yu', 'Ya', 'a', 'b', 'v', 'g', 'd', 'e', 'e', 'gh', 'z', 'i', 'y', 'k', 'l', 'm', 'n', 'o', 'p', 'r', 's', 't', 'u', 'f', 'h', 'c', 'ch', 'sh', 'sch', 'y', 'y', 'y', 'e', 'yu', 'ya', '_');
                 return str_replace($rus, $lat, $str);
             }
-//Первеодим наш путь в транслит
+            //Первеодим наш путь в транслит
             $nameSection = $string[0];
             $string[0] = mb_strtolower(translit($string[0]));
 
-//Функция поиска раздела по символьному коды
+            //Функция поиска раздела по символьному коды
             function findSection($IBLOCK_SECTION_CODE) {
 
                 //Заменяем слэш в названии на нижнее подчеркивание
@@ -263,19 +281,23 @@ class StandardComponent extends CBitrixComponent
                 return $isSectionID;
             }
 
-//Создать каталог если не существует
+            //Создать каталог если не существует
             function creatCatalogIfnotFind($IBLOCK_SECTION_ARRY)
             {
                 $SECTION_NAME = explode("/", $_POST['string0']);
 
                 $IBLOCK_SECTION_ID_ARRY = explode("/", $IBLOCK_SECTION_ARRY);
                 $sectionPath = $IBLOCK_SECTION_ID_ARRY[0]; //Переводим переменную путь к каталогу в начало
+
+
                 $iterrator = 0;
                 $sectionID = "";
+                \Bitrix\Main\Diag\Debug::dumpToFile(['$IBLOCK_SECTION_ID_ARRY' => $IBLOCK_SECTION_ID_ARRY], '', 'log.txt');
                 foreach ($IBLOCK_SECTION_ID_ARRY as $IBLOCK_SECTION_CODE) {
                     if ($iterrator > 0) {
                         $sectionPath .= "/" . $IBLOCK_SECTION_CODE;
                     }
+
                     //Если раздел не найден то создаем его
                     if (!findSection($sectionPath)) {
 
@@ -284,13 +306,16 @@ class StandardComponent extends CBitrixComponent
                         $arParams = array("replace_space"=>"/","replace_other"=>"_");
                         $trans = Cutil::translit($name,"ru",$arParams);
 
+                        \Bitrix\Main\Diag\Debug::dumpToFile(['$trans' => $trans], '', 'log.txt');
+                        \Bitrix\Main\Diag\Debug::dumpToFile(['$sectionID' => $sectionID], '', 'log.txt');
+
                         $newSection = new CIBlockSection; //Новый раздел
                         $arFields = Array(
                             "ACTIVE" => "Y",
                             "IBLOCK_SECTION_ID" => $sectionID,
                             "IBLOCK_ID" => 5,
                             "CODE" => $trans,
-                            "NAME" => end($SECTION_NAME)
+                            "NAME" => $SECTION_NAME[$iterrator]
                         );
                         $isSectionID = $newSection->Add($arFields);
                     }
@@ -395,8 +420,10 @@ class StandardComponent extends CBitrixComponent
                             //Создаем каталог если его нет
                             if (!findSection($string[0])) {
                                 $sectID = creatCatalogIfnotFind($string[0]);
+                                \Bitrix\Main\Diag\Debug::dumpToFile(['$sectID1' => $sectID], '', 'log.txt');
                             } else {
                                 $sectID = findSection($string[0]);
+                                \Bitrix\Main\Diag\Debug::dumpToFile(['$sectID2' => $sectID], '', 'log.txt');
                             }
 
                             $arLoadProductArray = Array(

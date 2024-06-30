@@ -5,13 +5,10 @@ $APPLICATION->SetPageProperty("keywords_inner", "АСТ-сервис");
 $APPLICATION->SetPageProperty("keywords", "АСТ-сервис");
 $APPLICATION->SetTitle("Контакты");
 ?><p>
-    Звоните:&nbsp;<a href="tel: +74852789278">(4852) 78-92-78</a>
+	 Звоните:&nbsp;<a href="tel: +74852789278">(4852) 90-66-00</a>
 </p>
 <p>
-    Факс:&nbsp;<a href="tel: +74852789278">(4852) 737-888</a>
-</p>
-<p>
-    Viber: <a href="https://viber.click/79206589278">+7-920-658-92-78</a>
+	 Whatsap/Viber: <a href="https://viber.click/79206589278">+7-920-658-92-78</a>
 </p>
 <p>
 	 Пишите на e-mail:&nbsp;<a href="mailto: dkorotkov@mail.ru">dkorotkov@mail.ru</a>
@@ -20,7 +17,6 @@ $APPLICATION->SetTitle("Контакты");
  <br>
  Адрес склада:&nbsp;150044, Ярославль,Ленинградский пр-т, д.27-Б,к2<br>
  <br>
-
 <?$APPLICATION->IncludeComponent(
 	"bitrix:form.result.new",
 	"order_form",

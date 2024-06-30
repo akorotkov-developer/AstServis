@@ -1,8 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("tags", "ямз, двигатели ямз, запчасти явмз, дигатели тмз, запчасти тмз, переоборудование ямз");
-$APPLICATION->SetPageProperty("keywords_inner", "ямз, двигатели ямз, запчасти явмз, дигатели тмз, запчасти тмз, переоборудование ямз");
-$APPLICATION->SetTitle("Комплекты переоборудования на двигателель ЯМЗ");
+$APPLICATION->SetPageProperty("tags", "Ярославль, двигатели Ярославль, запчасти явмз, дигатели Тутаев, запчасти Тутаев, переоборудование Ярославль");
+$APPLICATION->SetPageProperty("keywords_inner", "Ярославль, двигатели Ярославль, запчасти явмз, дигатели Тутаев, запчасти Тутаев, переоборудование Ярославль");
+$APPLICATION->SetTitle("Комплекты переоборудования на двигателель Ярославль");
 $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 ?><table cellspacing="0" cellpadding="0">
 <tbody>
@@ -65,7 +65,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 1.
 	</td>
 	<td rowspan="3">
- <a href="http://www.astradizel.ru/komplekty/komplekt%20t-150.pdf" target="_blank">двигателя «ЯМЗ-236М»<br>
+ <a href="http://www.astradizel.ru/komplekty/komplekt%20t-150.pdf" target="_blank">двигателя «Ярославль-236М»<br>
 		 для установки на шасси<br>
 		 трактора «Т-150»</a><br>
 	</td>
@@ -109,7 +109,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 2.
 	</td>
 	<td rowspan="3">
- <a href="http://www.astradizel.ru/komplekty/komplekt%20k701.doc" target="_blank">трактор «К-701» с двигателя ЯМЗ-240БМ2 на двигатель ЯМЗ-238НД5&nbsp;</a><br>
+ <a href="http://www.astradizel.ru/komplekty/komplekt%20k701.doc" target="_blank">трактор «К-701» с двигателя Ярославль-240БМ2 на двигатель Ярославль-238НД5&nbsp;</a><br>
  <br>
 	</td>
 	<td rowspan="3" align="left">
@@ -152,8 +152,8 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 3.
 	</td>
 	<td rowspan="3">
-		 двигателя «ЯМЗ-238НД3»<br>
-		 (взамен «ЯМЗ-238НД2»)<br>
+		 двигателя «Ярославль-238НД3»<br>
+		 (взамен «Ярославль-238НД2»)<br>
 		 для установки на шасси<br>
 		 трактора «К-700»<br>
  <br>
@@ -199,7 +199,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 4.
 	</td>
 	<td rowspan="3">
- <a href="http://www.astradizel.ru/komplekty/komplekt%20don1500.doc" target="_blank">двигателя «ЯМЗ-238АК»<br>
+ <a href="http://www.astradizel.ru/komplekty/komplekt%20don1500.doc" target="_blank">двигателя «Ярославль-238АК»<br>
 		 для установки на шасси<br>
 		 зерноуборочного комбайна<br>
 		 «Дон-1200» и «Дон-1500»</a><br>
@@ -245,7 +245,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 5.
 	</td>
 	<td rowspan="3">
- <a href="http://www.astradizel.ru/komplekty/komplekt%20don680.doc">двигателя «ЯМЗ-238АК»<br>
+ <a href="http://www.astradizel.ru/komplekty/komplekt%20don680.doc">двигателя «Ярославль-238АК»<br>
 		 для установки на шасси<br>
 		 зерноуборочного комбайна<br>
 		 «Дон-680»</a><br>
@@ -291,7 +291,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 6.
 	</td>
 	<td rowspan="3">
- <a href="http://www.astradizel.ru/komplekty/komplekt%20ksk100.doc" target="_blank">двигателя «ЯМЗ-236М2»<br>
+ <a href="http://www.astradizel.ru/komplekty/komplekt%20ksk100.doc" target="_blank">двигателя «Ярославль-236М2»<br>
 		 для установки на шасси<br>
 		 кормоуборочного комбайна<br>
 		 «КСК-100»</a><br>
@@ -337,7 +337,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 7.
 	</td>
 	<td rowspan="3">
- <a href="http://www.astradizel.ru/komplekty/komplekt%20e281.doc" target="_blank">двигателя «ЯМЗ-236М2»<br>
+ <a href="http://www.astradizel.ru/komplekty/komplekt%20e281.doc" target="_blank">двигателя «Ярославль-236М2»<br>
 		 для установки на шасси<br>
 		 кормоуборочного комбайна<br>
 		 «Е-280» и «Е-281»</a><br>
@@ -383,7 +383,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 8.
 	</td>
 	<td rowspan="3">
-		 двигателя «ЯМЗ-236М2»<br>
+		 двигателя «Ярославль-236М2»<br>
 		 для установки на шасси<br>
 		 трактора «ДТ-75»<br>
  <br>
@@ -430,7 +430,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 9.
 	</td>
 	<td rowspan="3">
- <a href="http://www.astradizel.ru/komplekty/komplekt%20vt100-150.doc" target="_blank">двигателя «ЯМЗ-236М2»<br>
+ <a href="http://www.astradizel.ru/komplekty/komplekt%20vt100-150.doc" target="_blank">двигателя «Ярославль-236М2»<br>
 		 для установки на шасси<br>
 		 трактора&nbsp;<br>
 		 «ВТ-100» и «ВТ-150»</a><br>
@@ -476,7 +476,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 10.
 	</td>
 	<td rowspan="3">
-		 двигателя «ЯМЗ-236М2»<br>
+		 двигателя «Ярославль-236М2»<br>
 		 для установки на шасси<br>
 		 трактора «Т-4»<br>
  <br>
@@ -521,7 +521,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 11.
 	</td>
 	<td rowspan="3">
- <a href="http://www.astradizel.ru/komplekty/komplekt%20dz122.doc" target="_blank">двигателя «ЯМЗ-236М2»<br>
+ <a href="http://www.astradizel.ru/komplekty/komplekt%20dz122.doc" target="_blank">двигателя «Ярославль-236М2»<br>
 		 для установки на шасси<br>
 		 трактора «ДЗ-122»</a><br>
  <br>

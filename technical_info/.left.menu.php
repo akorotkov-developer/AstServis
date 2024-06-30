@@ -8,7 +8,7 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Каталоги ЯМЗ", 
+		"Каталоги Ярославль", 
 		"/technical_info/katalogi-yamz.php", 
 		Array(), 
 		Array(), 

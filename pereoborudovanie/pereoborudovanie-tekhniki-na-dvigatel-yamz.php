@@ -1,12 +1,12 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("tags", "ямз, двигатели ямз, запчасти явмз, дигатели тмз, запчасти тмз, переоборудование ямз");
-$APPLICATION->SetPageProperty("keywords_inner", "ямз, двигатели ямз, запчасти явмз, дигатели тмз, запчасти тмз, переоборудование ямз");
-$APPLICATION->SetTitle("Переоборудование техники на двигатель ЯМЗ");
+$APPLICATION->SetPageProperty("tags", "Ярославль, двигатели Ярославль, запчасти явмз, дигатели Тутаев, запчасти Тутаев, переоборудование Ярославль");
+$APPLICATION->SetPageProperty("keywords_inner", "Ярославль, двигатели Ярославль, запчасти явмз, дигатели Тутаев, запчасти Тутаев, переоборудование Ярославль");
+$APPLICATION->SetTitle("Переоборудование техники на двигатель Ярославль");
 $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
-?>В последнее время в связи с дороговизной обслуживания и ремонта импортной техники, хорошим решением является замена вышедшего из строя импортного двигателя на двигатель ЯМЗ. Недорогой по цене и обслуживанию неприхотливый двигатель ЯМЗ можем установить практически на любую технику, взамен штатного двигателя такой же мощности. Можем сохранить уровень Евро4, можем заменить штатный двигатель Евро4 на Евро0-2, сохранив при этом все функции электрики установленной на штатном двигателе необходимые для корректной работы гидротрансмиссии и всего шасси в комплексе. Проектирование и изготовление монтажного комплекта выполняется квалифицированно с большим опытом выполнения подобных работ.
+?>В последнее время в связи с дороговизной обслуживания и ремонта импортной техники, хорошим решением является замена вышедшего из строя импортного двигателя на двигатель Ярославль. Недорогой по цене и обслуживанию неприхотливый двигатель Ярославль можем установить практически на любую технику, взамен штатного двигателя такой же мощности. Можем сохранить уровень Евро4, можем заменить штатный двигатель Евро4 на Евро0-2, сохранив при этом все функции электрики установленной на штатном двигателе необходимые для корректной работы гидротрансмиссии и всего шасси в комплексе. Проектирование и изготовление монтажного комплекта выполняется квалифицированно с большим опытом выполнения подобных работ.
 <p>
-	 Переоборудование импортной техники на двигатель ЯМЗ включает в себя: - состыковка двигателя ЯМЗ с трансмиссией импортного двигателя, - состыковка систем впуска, выпуска и охлаждения двигателя ЯМЗ с этими системами импортной техники, - перенос всех электрических датчиков с импортного двигателя на двигатель ЯМЗ, для сохранения всех функций системы управления трансмиссией, - перенос всего навесного оборудования с импортного двигателя на двигатель ЯМЗ, здесь иногда приходится делать приводы для навесных агрегатов, например насосов нш, установленных на двигателях, - изготовление и установка оригинальных опор под двигатель ЯМЗ, - изготовление привода управления ТНВД двигателя ЯМЗ, имеется возможность сохранения электронной педали газа или замена её на механическую.
+	 Переоборудование импортной техники на двигатель Ярославль включает в себя: - состыковка двигателя Ярославль с трансмиссией импортного двигателя, - состыковка систем впуска, выпуска и охлаждения двигателя Ярославль с этими системами импортной техники, - перенос всех электрических датчиков с импортного двигателя на двигатель Ярославль, для сохранения всех функций системы управления трансмиссией, - перенос всего навесного оборудования с импортного двигателя на двигатель Ярославль, здесь иногда приходится делать приводы для навесных агрегатов, например насосов нш, установленных на двигателях, - изготовление и установка оригинальных опор под двигатель Ярославль, - изготовление привода управления ТНВД двигателя Ярославль, имеется возможность сохранения электронной педали газа или замена её на механическую.
 </p>
 <p>
  <a href="https://photos.app.goo.gl/3nxzmvXNa4gDqjkj6" target="_blank">посмотреть производство</a><br>
@@ -46,7 +46,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Бульдозер Shantui SD-32
 	</td>
 	<td align="center">
-		 ТМЗ-8423, ЯМЗ-7511
+		 Тутаев-8423, Ярославль-7511
 	</td>
 	<td align="center">
 	</td>
@@ -62,7 +62,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Case Steiger 530
 	</td>
 	<td align="center">
-		 ТМЗ-8423
+		 Тутаев-8423
 	</td>
 	<td align="center">
 		 (435)
@@ -80,7 +80,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Buhler VERSATILE ННТ 535</a>
 	</td>
 	<td align="center">
-		 ЯМЗ-240НМ2
+		 Ярославль-240НМ2
 	</td>
 	<td align="center">
 		 (535)
@@ -98,7 +98,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Buhler VERSATILE ННТ 435</a>
 	</td>
 	<td align="center">
-		 ТМЗ-8423
+		 Тутаев-8423
 	</td>
 	<td align="center">
 		 (435)
@@ -116,7 +116,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Buhler VERSATILE 2425</a>
 	</td>
 	<td align="center">
-		 ТМЗ-8423
+		 Тутаев-8423
 	</td>
 	<td align="center">
 		 (425)
@@ -134,7 +134,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Buhler VERSATILE 2375</a>
 	</td>
 	<td align="center">
-		 ТМЗ-8423
+		 Тутаев-8423
 	</td>
 	<td align="center">
 		 (375)
@@ -151,7 +151,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
  <a href="http://www.astradizel.ru/dvigyamz/pereobor/caterpillar_d10n.php">Бульдозер "Caterpillar D10N"</a>
 	</td>
 	<td align="center">
-		 ЯМЗ-850.10
+		 Ярославль-850.10
 	</td>
 	<td align="center">
 		 (650)
@@ -168,7 +168,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
  <a href="http://www.astradizel.ru/dvigyamz/pereobor/caterpillar_d9h.php">Бульдозер "Caterpillar D9Н"</a>
 	</td>
 	<td align="center">
-		 ЯМЗ-240НМ2
+		 Ярославль-240НМ2
 	</td>
 	<td align="center">
 		 (410)
@@ -185,7 +185,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
  <a href="http://www.astradizel.ru/dvigyamz/pereobor/caterpillar_d9n.php">Бульдозер "Caterpillar D9N"</a>
 	</td>
 	<td align="center">
-		 ТМЗ-8481.10
+		 Тутаев-8481.10
 	</td>
 	<td align="center">
 		 294(400)
@@ -202,7 +202,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
  <a href="http://www.astradizel.ru/dvigyamz/pereobor/caterpillar_d9l.php">Бульдозер "Caterpillar D9L"</a>
 	</td>
 	<td align="center">
-		 ТМЗ-8481.10
+		 Тутаев-8481.10
 	</td>
 	<td align="center">
 		 294(400)
@@ -219,7 +219,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Трубоукладчик "Caterpillar D594Н"
 	</td>
 	<td align="center">
-		 ЯМЗ-240М2
+		 Ярославль-240М2
 	</td>
 	<td align="center">
 		 (360)
@@ -236,7 +236,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
  <a href="http://www.astradizel.ru/dvigyamz/pereobor/Komatsu%20355.php">Бульдозер D-355A "Komatsu"</a>
 	</td>
 	<td align="center">
-		 ЯМЗ-240НМ2, ТМЗ-8481
+		 Ярославль-240НМ2, Тутаев-8481
 	</td>
 	<td align="center">
 		 309(420)
@@ -253,7 +253,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Бульдозер D-375A "Komatsu"
 	</td>
 	<td align="center">
-		 ЯМЗ-850.10
+		 Ярославль-850.10
 	</td>
 	<td align="center">
 	</td>
@@ -269,7 +269,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
  <a href="http://www.astradizel.ru/dvigyamz/pereobor/Komatsu%20355.php">Трубоукладчик D-355C "Komatsu"</a>
 	</td>
 	<td align="center">
-		 ЯМЗ-240М2, 240БМ2, ТМЗ-8481
+		 Ярославль-240М2, 240БМ2, Тутаев-8481
 	</td>
 	<td align="center">
 		 266(360)
@@ -305,7 +305,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Трубоукладчик D-155С "Komatsu"
 	</td>
 	<td align="center">
-		 ЯМЗ-240М2, 240БМ2
+		 Ярославль-240М2, 240БМ2
 	</td>
 	<td align="center">
 		 235(320)
@@ -322,7 +322,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Экскаватор Hidromek-220
 	</td>
 	<td align="center">
-		 ЯМЗ-236М2
+		 Ярославль-236М2
 	</td>
 	<td align="center">
 	</td>
@@ -338,7 +338,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Экскаваторы PC-360, PC-400"Komatsu"
 	</td>
 	<td align="center">
-		 ЯМЗ-238М2
+		 Ярославль-238М2
 	</td>
 	<td align="center">
 		 176(240)
@@ -371,7 +371,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
  <a href="http://www.astradizel.ru/dvigyamz/pereobor/hitachi_ex_350.php">Экскаватор «Hitachi» ЕХ 350</a>
 	</td>
 	<td align="center">
-		 ЯМЗ-238Д1
+		 Ярославль-238Д1
 	</td>
 	<td align="center">
 		 (300)
@@ -387,7 +387,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
  <a href="http://www.astradizel.ru/dvigyamz/pereobor/hitachi_ex_400.php">Экскаватор «Hitachi» ЕХ 400</a>
 	</td>
 	<td align="center">
-		 ЯМЗ-238Д1
+		 Ярославль-238Д1
 	</td>
 	<td align="center">
 		 (300)
@@ -404,7 +404,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Экскаватор «Hitachi» ЕХ 700
 	</td>
 	<td align="center">
-		 ТМЗ-8481
+		 Тутаев-8481
 	</td>
 	<td align="center">
 		 (420)
@@ -421,7 +421,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Экскаватор "TDRESSTA TD25C"
 	</td>
 	<td align="center">
-		 ЯМЗ-7511
+		 Ярославль-7511
 	</td>
 	<td align="center">
 		 294(400)
@@ -438,7 +438,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Экскаватор RH-30C "Orensrein&amp;Koppel"
 	</td>
 	<td align="center">
-		 ЯМЗ 238 Д1
+		 Ярославль 238 Д1
 	</td>
 	<td align="center">
 		 243(330)
@@ -455,7 +455,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Агрегат наливочный АН-501
 	</td>
 	<td align="center">
-		 ЯМЗ-240НМ2
+		 Ярославль-240НМ2
 	</td>
 	<td align="center">
 		 (500)
@@ -472,7 +472,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 БульдозерТ-11
 	</td>
 	<td align="center">
-		 ЯМЗ-236ДК7
+		 Ярославль-236ДК7
 	</td>
 	<td align="center">
 		 136(185)
@@ -489,7 +489,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Промышленный трактор Т25.01
 	</td>
 	<td align="center">
-		 ЯМЗ-240НМ2, 85221.10
+		 Ярославль-240НМ2, 85221.10
 	</td>
 	<td align="center">
 		 305(415)
@@ -498,7 +498,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 10000
 	</td>
 	<td align="center">
-		 MTU-396, 8ДВТ В-500, ЯМЗ-8501.10
+		 MTU-396, 8ДВТ В-500, Ярославль-8501.10
 	</td>
 </tr>
 <tr>
@@ -506,7 +506,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Промышленный трактор Т-330
 	</td>
 	<td align="center">
-		 ЯМЗ-240НМ2, 240М2
+		 Ярославль-240НМ2, 240М2
 	</td>
 	<td align="center">
 		 (330)
@@ -524,7 +524,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Промышленный трактор Т-500
 	</td>
 	<td align="center">
-		 ЯМЗ-850.10
+		 Ярославль-850.10
 	</td>
 	<td align="center">
 		 (540)
@@ -541,7 +541,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Трубоукладчик ТГ-321
 	</td>
 	<td align="center">
-		 ЯМЗ-240М2
+		 Ярославль-240М2
 	</td>
 	<td align="center">
 		 265(360)
@@ -550,7 +550,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 10000
 	</td>
 	<td align="center">
-		 MTU-396, 8ДВТ В-500, ЯМЗ-8501.10
+		 MTU-396, 8ДВТ В-500, Ярославль-8501.10
 	</td>
 </tr>
 <tr>
@@ -558,7 +558,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Бульдозер ДЭТ-250
 	</td>
 	<td align="center">
-		 ЯМЗ-7514
+		 Ярославль-7514
 	</td>
 	<td align="center">
 		 (400)
@@ -575,7 +575,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Трактор Т-150(гусеничный, колесный)
 	</td>
 	<td align="center">
-		 ЯМЗ-236М2
+		 Ярославль-236М2
 	</td>
 	<td align="center">
 		 (180)
@@ -592,7 +592,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Трактор гусеничный ДТ-75
 	</td>
 	<td align="center">
-		 ЯМЗ-236М2
+		 Ярославль-236М2
 	</td>
 	<td align="center">
 		 (180)
@@ -609,7 +609,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Трактор Т-4
 	</td>
 	<td align="center">
-		 ЯМЗ-236М2
+		 Ярославль-236М2
 	</td>
 	<td align="center">
 		 (180)
@@ -626,7 +626,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Трактор К-700
 	</td>
 	<td align="center">
-		 ЯМЗ-238НД3
+		 Ярославль-238НД3
 	</td>
 	<td align="center">
 		 (300)
@@ -642,7 +642,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Трактор К-701
 	</td>
 	<td align="center">
-		 ЯМЗ-238НД5
+		 Ярославль-238НД5
 	</td>
 	<td align="center">
 		 (330)
@@ -659,7 +659,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Трактор К-744
 	</td>
 	<td align="center">
-		 ЯМЗ-7511
+		 Ярославль-7511
 	</td>
 	<td align="center">
 	</td>
@@ -674,7 +674,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Комбайн Палессе GS812
 	</td>
 	<td align="center">
-		 ЯМЗ-236НЕ2
+		 Ярославль-236НЕ2
 	</td>
 	<td align="center">
 	</td>
@@ -690,7 +690,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Комбайн КСК-Е281
 	</td>
 	<td align="center">
-		 ЯМЗ-236М2
+		 Ярославль-236М2
 	</td>
 	<td align="center">
 		 (180)
@@ -707,7 +707,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Комбайн Дон-1500А
 	</td>
 	<td align="center">
-		 ЯМЗ-238АК
+		 Ярославль-238АК
 	</td>
 	<td align="center">
 		 (240)
@@ -724,7 +724,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Комбайн Дон-1200
 	</td>
 	<td align="center">
-		 ЯМЗ-236ДК
+		 Ярославль-236ДК
 	</td>
 	<td align="center">
 	</td>
@@ -739,7 +739,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Комбайн Дон-680
 	</td>
 	<td align="center">
-		 ЯМЗ-238ДК1
+		 Ярославль-238ДК1
 	</td>
 	<td align="center">
 	</td>
@@ -754,7 +754,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Комбайн КСК-100
 	</td>
 	<td align="center">
-		 ЯМЗ-236М2
+		 Ярославль-236М2
 	</td>
 	<td align="center">
 		 (180)
@@ -771,7 +771,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Кормоуборочный комбайн Е-280
 	</td>
 	<td align="center">
-		 ЯМЗ-236
+		 Ярославль-236
 	</td>
 	<td align="center">
 	</td>
@@ -786,7 +786,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Комбайн Дон-1500А
 	</td>
 	<td align="center">
-		 ЯМЗ-238АК
+		 Ярославль-238АК
 	</td>
 	<td align="center">
 		 (240)
@@ -803,7 +803,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Трактор ВТ-100
 	</td>
 	<td align="center">
-		 ЯМЗ-236
+		 Ярославль-236
 	</td>
 	<td align="center">
 	</td>
@@ -818,7 +818,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Трактор ВТ-150
 	</td>
 	<td align="center">
-		 ЯМЗ-236
+		 Ярославль-236
 	</td>
 	<td align="center">
 	</td>
@@ -833,7 +833,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Тепловоз ТГМ 23
 	</td>
 	<td align="center">
-		 ЯМЗ-238М2
+		 Ярославль-238М2
 	</td>
 	<td align="center">
 	</td>
@@ -848,7 +848,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Тепловоз ТГК 2
 	</td>
 	<td align="center">
-		 ЯМЗ-238М2
+		 Ярославль-238М2
 	</td>
 	<td align="center">
 	</td>
@@ -863,7 +863,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		 Железнодорожная машина АДМ-1
 	</td>
 	<td align="center">
-		 ЯМЗ-238М2
+		 Ярославль-238М2
 	</td>
 	<td align="center">
 	</td>
@@ -878,7 +878,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
  <a href="http://astradizel.ru/dvigyamz/pereobor/HYUNDAI%20HL%20770.php">Фронтальный погрузчик HYUNDAI HL 770-7A</a>
 	</td>
 	<td align="center">
-		 ЯМЗ-238ДЕ2
+		 Ярославль-238ДЕ2
 	</td>
 	<td align="center">
 		 (330)
@@ -891,7 +891,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 </tr>
 <tr>
 	<td>
- <a href="http://astradizel.ru/dvigyamz/pereobor/240nm_mom.php">Установка МОМ-184 на двигатель ЯМЗ-240НМ2&nbsp;</a>
+ <a href="http://astradizel.ru/dvigyamz/pereobor/240nm_mom.php">Установка МОМ-184 на двигатель Ярославль-240НМ2&nbsp;</a>
 	</td>
 	<td align="center">
 		 &nbsp;
@@ -906,7 +906,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 </tr>
 <tr>
 	<td>
- <a href="http://astradizel.ru/dvigyamz/pereobor/240nm_myfta.php">Установка упругой муфты на двигатель ЯМЗ-240НМ2 с фланцем под кардан&nbsp;</a>
+ <a href="http://astradizel.ru/dvigyamz/pereobor/240nm_myfta.php">Установка упругой муфты на двигатель Ярославль-240НМ2 с фланцем под кардан&nbsp;</a>
 	</td>
 	<td align="center">
 		 &nbsp;
@@ -921,7 +921,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 </tr>
 <tr>
 	<td>
- <a href="http://www.astradizel.ru/dvigyamz/pereobor/240nm_interkyller.php">Установка на двигатель ЯМЗ-240НМ2 интеркуллера</a>
+ <a href="http://www.astradizel.ru/dvigyamz/pereobor/240nm_interkyller.php">Установка на двигатель Ярославль-240НМ2 интеркуллера</a>
 	</td>
 	<td align="center">
 		 &nbsp;

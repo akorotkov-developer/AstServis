@@ -1,8 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("tags", "ямз, двигатели ямз, запчасти явмз, дигатели тмз, запчасти тмз, переоборудование ямз");
-$APPLICATION->SetPageProperty("keywords_inner", "ямз, двигатели ямз, запчасти явмз, дигатели тмз, запчасти тмз, переоборудование ямз");
-$APPLICATION->SetPageProperty("keywords", "ямз, двигатели ямз, запчасти явмз, дигатели тмз, запчасти тмз, переоборудование ямз");
+$APPLICATION->SetPageProperty("tags", "Ярославль, двигатели Ярославль, запчасти Ярославль, двигатели Тутаев, запчасти Тутаев, переоборудование Ярославль");
+$APPLICATION->SetPageProperty("keywords_inner", "Ярославль, двигатели Ярославль, запчасти Ярославль, двигатели Тутаев, запчасти Тутаев, переоборудование Ярославль");
+$APPLICATION->SetPageProperty("keywords", "Ярославль, двигатели Ярославль, запчасти Ярославль, двигатели Тутаев, запчасти Тутаев, переоборудование Ярославль");
 $APPLICATION->SetTitle("Каталог продукции");
 ?>
 <?$APPLICATION->IncludeComponent(
